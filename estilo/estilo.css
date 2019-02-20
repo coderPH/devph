@@ -1,0 +1,513 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+/**Boot CSS **/
+
+html,body{
+	height: 100%;
+}
+
+img {
+	width: 100%;
+	max-width: 300px;
+}
+
+.center{
+	max-width: 1280px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.w33{
+	width: 33.3%;
+	padding: 0 10px;
+}
+
+.w50{
+	padding: 0 10px;
+	width: 50%;
+}
+
+.left{
+	float: left;
+}
+
+.right {
+	float: right;
+}
+.clear{
+	clear: both;
+}
+
+/** estilização do site */
+
+.sucesso {
+	display: none;
+	z-index: 10;
+	position: fixed;
+	right: 20px;
+	top: 72px;
+	padding: 10px 2%;
+	width: 310px;
+	text-align: center;
+	font-weight: 300;
+	color: white;
+	background-color: green;
+}
+
+.error {
+	display: none;
+	z-index: 10;
+	position: fixed;
+	right: 20px;
+	top: 72px;
+	padding: 10px 2%;
+	widows: 410px;
+	text-align: center;
+	font-weight: 300;
+	color: white;
+	background-color: #ce0000;
+}
+
+.overlay-loading{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	background: rgb(0,0,0,0.3);
+}
+
+.overlay-loading img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	transform: translate(-50%,-50%);
+}
+
+header {
+	padding: 20px 0;
+	background: #00477f;
+}
+
+header .logo {
+	font-size: 23px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: white;
+}
+
+.logo a {
+	color: white;
+	text-decoration: none;
+}
+
+.mobile {
+	display: none;
+}
+
+nav.desktop ul {
+	position: relative;
+	top: 5px;
+	list-style: none;
+}
+
+nav.desktop li {
+	text-transform: uppercase;
+	padding: 0 30px;
+	font-weight: 300;
+	font-size: 15px;
+	display: inline-block;
+}
+
+nav.desktop a{
+	color: white;
+	text-decoration: none;
+}
+
+nav.desktop a:hover{
+	text-decoration: underline;
+}
+
+section.banner-container {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+.banner-single{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+}
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(51,51,51,0.6);
+}
+
+section.banner-container form {
+	width: 90%;
+	max-width: 600px;
+	z-index: 3;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+
+}
+
+section.banner-container form h2{
+	color: white;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+}
+
+section.banner-container form input[type=email] {
+	width: 100%;
+	height: 65px;
+	background: white;
+	margin-top: 10px;
+	color: #333;
+	font-size: 22px;
+	padding-left: 10px;
+	border: 0;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+section.banner-container form input[type=submit] {
+	width: 100%;
+	height: 65px;
+	background: #00C59E;
+	margin-top: 10px;
+	color: white;
+	cursor: pointer;
+	font-size: 22px;
+	border: 0;
+	-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+section.descricao-autor {
+	padding: 40px 0;
+}
+
+section.descricao-autor h2{
+	font-size: 25px;
+	font-weight: 300;
+}
+
+section.descricao-autor p {
+	font-size: 16px;
+	color: #444;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+section.especialidades {
+	padding: 40px 0;
+	background: #E2E2E2;
+}
+
+section.especialidades h2.title{
+	font-size: 30px;
+	font-weight: 400;
+	color: #999;
+	text-align: center;
+}
+
+.box-especialidades {
+	margin: 40px 0;
+	padding: 0 30px;
+	text-align: center;
+}
+
+.box-especialidades h3{
+	font-size: 30px;
+	color: #00477f;
+}
+
+.box-especialidades h4{
+	font-weight: 300;
+	font-size: 25px;
+	text-align: center;
+	color: #BABABA;
+}
+
+.box-especialidades p{
+	font-size: 15px;
+	color: #444;
+	margin-top: 10px;
+}
+
+section.extras {
+	padding: 30px 0;
+	background: #00477f;
+}
+
+.depoimento-container,.servicos-container {
+	padding: 0 30px;
+}
+
+section.extras .title{
+	color: white;
+	font-weight: 300;
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+.depoimento-single {
+	padding: 15px 0;
+	border-bottom: 1px solid #09295b;
+}
+
+p.depoimento-descricao {
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+}
+
+p.nome-autor {
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.servicos ul {
+	margin: 20px 0;
+	list-style-position: inside;
+
+}
+
+.servicos li {
+	margin-bottom: 15px;
+	font-size: 15px;
+	color: white;
+	font-weight: 300;
+}
+
+footer {
+	background: #09295b;
+	padding: 30px 0;
+}
+
+footer.fixed{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p{
+	color: white;
+	text-align: center;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+footer .ph p{
+	position: relative;
+}
+
+footer .ph a{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+/* solução para o scroll-x IE E EDGE */
+body{
+	overflow-x: hidden;
+}
+
+section.error404 {
+	padding: 30px 0;
+	min-height: 485px;
+}
+
+section.error404 .center{
+	position: relative;
+}
+
+section.error404 h4{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	transform:translateY(-50%);
+	color: #444;
+	font-weight: 400;
+}
+
+section.error404 p{
+	
+	text-align: center;
+	color: #444;
+	font-weight: 300;
+}
+
+section.error404 a{
+	font-weight: 300;
+	text-decoration: none;
+	color: blue;
+}
+
+#map {
+	width: 100%;
+	height: 400px;
+}
+
+.contato-container{
+	padding: 40px 0;
+	text-align: center;
+}
+
+.contato-container input[type=text]{
+	margin: 8px 0;
+	max-width: 700px;
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	border: 1px solid #ccc;
+}
+
+.contato-container input[type=email]{
+	margin: 8px 0;
+	max-width: 700px;
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	border: 1px solid #ccc;
+
+}
+
+.contato-container textarea{
+	margin: 8px 0;
+	max-width: 700px;
+	width: 100%;
+	height: 120px;
+	padding-left: 8px;
+	font-size: 16px;
+	color: #444;
+	border: 1px solid #ccc;
+	resize: vertical;
+	padding: 8px;
+
+}
+
+.contato-container input[type=submit]{
+	background: #00C59E;
+	width: 140px;
+	height: 40px;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.bullets {
+	z-index: 5;
+	position: absolute;
+	bottom: 10px;
+	left: 48%;
+	transform: translateY(-50%);
+}
+
+.bullets span {
+	margin: 0 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #000;
+	display: inline-block;
+	
+}
+
+.bullets span.slider-ativo{
+	background: white;
+}
+
+@media screen and (max-width: 768px){
+	nav.desktop {
+		display: none;
+	}
+	nav.mobile {
+		display: block;
+	}
+
+	.botao-menu-mobile {
+		font-size: 25px;
+		cursor: pointer;
+		color: white;
+	}
+
+	nav.mobile ul {
+		top: 65px;
+		z-index: 3;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		display: none;
+		text-align: center;
+	}
+
+	nav.mobile li {
+		font-family: "Open Sans";
+		font-weight: 300;
+		font-size: 17px;
+		display: block;
+		width: 100%;
+		padding: 8px 0;
+	}
+
+	nav.mobile a {
+		display: block;
+		text-decoration: none;
+		color: white;
+	}
+
+}	
+@media screen and (max-width: 760px){
+	img {
+		float: none !important;
+		display: block;
+		margin: 0 auto;
+		max-width: 500px;
+	}
+
+	.w50 {
+		padding: 20px;
+		width: 100%;
+	}
+	
+	.w33{
+		width: 100%;
+		padding: 20px;
+	}
+
+	.box-especialidades {
+		padding: 40px 20px;
+		margin: 0;
+	}
+
+}
